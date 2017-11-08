@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--二维码-->
+	<string name="button_ok">确定</string>
+	<string name="msg_camera_framework_bug">请在应用管理设置中允许万集卡访问你的相机。</string>
+
+	<string name="app_name">万集卡商家端</string>
+	<string name="title_activity_main">万集卡商家端%1$s</string>
+	<string name="toast_back_again_exit">再按一次退出</string>
+	<string name="update_title">检测到新版更新</string>
+	<string name="can_update">万集卡：%1$s</string>
+	<string name="no_available_net">无可用网络</string>
+	<string name="update_started">开始下载更新，请稍候</string>
+	<string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+	<string name="experience_immediately">立即体验</string>
+	<string name="done">完成</string>
+	<string name="all">全部</string>
+	<string name="ready_pay">待支付</string>
+	<string name="closed">已关闭</string>
+	<string name="search">搜索</string>
+	<string name="search_hint">请您输入订单号</string>
+	<string name="search_content">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	<string name="order_state">状态：%1$s</string>
+	<string name="order_num">订单号：%1$s</string>
+	<string name="order_amount">数量：%1$s</string>
+	<string name="order_money">订单金额：</string>
+	<string name="order_account">下单账号：%1$s</string>
+	<string name="order_time">时间：%1$s</string>
+	<string name="commodity_putaway">上架</string>
+	<string name="commodity_sold_out">下架</string>
+	<string name="commodity_rmb_sign">¥%1$s</string>
+	<string name="commodity_solded">已售：%1$s</string>
+	<string name="commodity_manage">商品管理</string>
+	<string name="commodity_on_offer_layout">出售中(0)</string>
+	<string name="commodity_solded_out_layout">已下架(0)</string>
+	<string name="commodity_on_offer">出售中(%1$s)</string>
+	<string name="commodity_solded_out">已下架(%1$s)</string>
+	<string name="consumption_to_be_confirmed">待确认</string>
+	<string name="consumption_cancle">已撤销</string>
+	<string name="consumption_consume_succeed">消费成功</string>
+	<string name="consumption_refunded_succeed">退款成功</string>
+	<string name="consumption_refunded">已退款</string>
+	<string name="consumption_reversal_close">冲正关闭</string>
+	<string name="consumption_consume_num">消费单号：%1$s</string>
+	<string name="consumption_phone_num">手机号码：%1$s</string>
+	<string name="consumption_order_money">订单金额：￥%1$s</string>
+	<string name="consumption_all_stores">全部分店</string>
+	<string name="consumption_all_times">全部时间</string>
+	<string name="consumption_all_status">全部状态</string>
+	<string name="consumption_print_card">打印小票</string>
+	<string name="consumption_time_today">今天</string>
+	<string name="consumption_time_three_today">近三天</string>
+	<string name="consumption_time_week">近一周</string>
+	<string name="consumption_time_more">更多时间</string>
+	<string name="consumption_is_sure_refunded">您确定要退款吗？</string>
+	<string name="consumption_time_start_finish">起始时间不能大于结束时间</string>
+	<string name="consumption_print_connect_failed">连接打印机失败</string>
+	<string name="consumption_print_papaer_jam">打印机卡纸</string>
+	<string name="consumption_print_unknow_mistake">打印机未知错误</string>
+	<string name="consumption_print_no_paper">打印机缺纸</string>
+	<string name="consumption_print_temperature_high">打印机高温</string>
+	<string name="consumption_no_order">暂无消费订单</string>
+
+	<string name="search_info_least_three">请输入至少3个字母或数字搜索</string>
+	<string name="search_info_no_content">请输入搜索内容</string>
+
+	<string name="about_us_info">© 2005–2016 万集融合信息技术（北京）有限公司 版权所有\n京公网安备11010802016306</string>
+	<string name="company_name">万集融合信息技术（北京）有限公司</string>
+	<string name="company_url">http://www.wjika.com/</string>
+
+	<string name="find_password_newpass">新密码</string>
+	<string name="find_password_input_newpass">请输入新密码</string>
+	<string name="find_password_ensure_newpass">确认新密码</string>
+	<string name="find_password_input_again">请再次输入新密码</string>
+
+	<string name="morning">上午</string>
+	<string name="afternoon">下午</string>
+	<string name="location">位置</string>
+	<string name="ignore">忽略</string>
+	<string name="upgrade">升级</string>
+	<string name="close">关闭</string>
+	<string name="refund">退款</string>
+	<string name="check">查看</string>
+	<string name="submit">提交</string>
+	<string name="income">收入</string>
+	<string name="withdraw">提现</string>
+	<string name="login">登录</string>
+	<string name="next">下一步</string>
+	<string name="cancel">取消</string>
+	<string name="save">保存</string>
+	<string name="qrcode">二维码</string>
+	<string name="network_anomaly">网络异常！</string>
+	<string name="call">呼叫</string>
+	<string name="server_phone">400–872–2002</string>
+	<string name="help_url">http://app.wjika.com/dp/userhelp-android.html</string>
+
+	<string name="more_time_start_time">起始时间</string>
+	<string name="more_time_finish_time">结束时间</string>
+	<string name="more_time_time_info">起始时间：00:00:00  结束时间：23:59:59</string>
+	<string name="more_time_print_statistics">打印统计</string>
+
+	<string name="feedback_hint_info">我们期待听到你的声音，请简要描述你的问题和意见！</string>
+
+	<string name="finance_manager_can_withdraw_money">可提现金额（¥）</string>
+	<string name="finance_manager_withdraw_time">提现时间</string>
+	<string name="finance_manager_withdraw_money">提现金额</string>
+	<string name="finance_manager_increase">+%1$s</string>
+	<string name="finance_manager_decrease">-%1$s</string>
+	<string name="finance_manager_sell_card">售卡结算金额</string>
+	<string name="finance_manager_sell_card_time">售卡结算时间</string>
+	<string name="finance_manager_no_recorder">暂无财务收支记录</string>
+	<string name="finance_manager_no_income">暂无收入记录</string>
+	<string name="finance_manager_no_withdraw">暂无提现记录</string>
+
+	<string name="home_checkstand">收银台</string>
+	<string name="home_checktand_consume_money">消费金额：</string>
+	<string name="home_checktand_consume_account">消费账户：</string>
+	<string name="home_checktand_income_money">请输入金额</string>
+	<string name="home_checktand_income_consume_money">请输入消费金额</string>
+	<string name="home_checktand_ensure_charge">确认扣款</string>
+	<string name="home_deal_success_charge">收款成功</string>
+	<string name="home_deal_consume_account">消费账户</string>
+	<string name="home_deal_consume_money">消费金额</string>
+	<string name="home_frag_order_num">0</string>
+	<string name="home_frag_turnover_today">今日营业额(￥)</string>
+	<string name="home_frag_turnover_today_money">0.00</string>
+	<string name="home_frag_collection">收款</string>
+	<string name="home_frag_order_manager">订单管理</string>
+	<string name="home_frag_consume_manager">消费管理</string>
+	<string name="home_frag_commidity_manager">商品管理</string>
+	<string name="home_frag_finance_manager">财务管理</string>
+	<string name="home_frag_store_manager">店铺管理</string>
+	<string name="home_frag_not_see">****</string>
+	<string name="home_trading_result">交易结果</string>
+	<string name="home_payment_failure">收款失败</string>
+	<string name="home_failure_reason">失败原因：%1$s</string>
+
+	<string name="load_data_status_null">暂无数据!</string>
+	<string name="load_data_status_failed">页面加载失败，请点击屏幕刷新！</string>
+
+	<string name="location_map_hint_select">请选择地址</string>
+
+	<string name="login_username">用户名</string>
+	<string name="login_input_username">请输入您的用户名</string>
+	<string name="login_password">密码</string>
+	<string name="login_input_password">请输入您的密码</string>
+	<string name="login_forger_password">总店账户忘记密码？</string>
+	<string name="login_no_account">没有账号，申请入驻</string>
+	
+	<string name="dynamic_system_info">系统消息</string>
+	<string name="dynamic_system_info_content">查看商户的站内信，系统动态信息</string>
+
+	<string name="person_fix_find_password">修改/找回密码</string>
+	<string name="person_second">%1$s秒</string>
+	<string name="person_fix_password">修改密码</string>
+	<string name="person_enter_correct_num">请输入正确的手机号码</string>
+	<string name="person_version_upgrade">版本更新</string>
+	<string name="person_call_service">联系客服</string>
+	<string name="person_feedback">意见反馈</string>
+	<string name="person_user_help">使用帮助</string>
+	<string name="person_about_us">关于我们</string>
+	<string name="person_quit_current_account">退出当前账号</string>
+	<string name="person_pwd_phone_number">手机号</string>
+	<string name="person_pwd_input_phone_number">请输入您的手机号</string>
+	<string name="person_pwd_code">验证码</string>
+	<string name="person_pwd_input_code">请输入验证码</string>
+	<string name="person_pwd_get_code">获取验证码</string>
+	<string name="person_person_center">个人中心</string>
+	<string name="person_is_quit_login">确定要退出登录？</string>
+	<string name="person_is_newst_verson">当前已是最新版本</string>
+	<string name="person_gesture_cant_read">无法读取手势库</string>
+	<string name="person_pwd_find_password">找回密码</string>
+	<string name="person_pwd_pass_not_null">密码不能为空</string>
+	<string name="person_pwd_pass_not_equals">两次输入的密码不一致</string>
+	<string name="person_pwd_fix_sucess">密码修改成功</string>
+	<string name="person_pwd_not_set">总店没有设置手机号</string>
+	<string name="person_pwd_phone_not_null">电话号码不能为空</string>
+	<string name="person_pwd_code_success">验证码发送成功，请注意查收</string>
+	<string name="person_feedback_input_suggest">请填写您的意见</string>
+	<string name="person_feedback_commit_success">意见反馈提交成功</string>
+
+	<string name="switch_environment">切换环境并重新登录</string>
+
+	<string name="store_manager_store_info">店铺信息</string>
+	<string name="store_manager_tailor_photo">裁剪照片</string>
+	<string name="store_manager_photo_manager">相册管理</string>
+	<string name="store_manager_store_switch">店铺开关</string>
+	<string name="store_manager_commercial_name">商户名</string>
+	<string name="store_manager_linkman">联系人</string>
+	<string name="store_manager_store_qrcode">店铺二维码</string>
+	<string name="store_manager_phone">座机</string>
+	<string name="store_manager_input_phone">输入座机号</string>
+	<string name="store_manager_address">地址</string>
+	<string name="store_manager_bussiness_time">营业时间</string>
+	<string name="store_manager_commercial_info">商户介绍</string>
+	<string name="store_manager_input_address">输入地址</string>
+	<string name="store_manager_select_location">选择定位</string>
+	<string name="store_manager_to_map_add">前往地图添加店铺</string>
+	<string name="store_manager_photo_first_picture">首图</string>
+	<string name="store_manager_photo_commercial">商户相册</string>
+	<string name="store_manager_input_linkman">请输入联系人</string>
+	<string name="store_manager_open_time">开店时间</string>
+	<string name="store_manager_open_time_detail">上午 08:00</string>
+	<string name="store_manager_close_time">闭店时间</string>
+	<string name="store_manager_close_time_detail">下午 09:00</string>
+	<string name="store_manager_is_close">是否关闭店铺</string>
+	<string name="store_manager_is_open">是否开启店铺</string>
+	<string name="store_manager_close">关闭店铺</string>
+	<string name="store_manager_open">开启店铺</string>
+	<string name="store_manager_select_photo">选择照片</string>
+	<string name="store_manager_select_photo_store">请选择店铺图片</string>
+	<string name="store_manager_upload_sucess">图片上传成功</string>
+	<string name="store_manager_input_location">输入所在地</string>
+	<string name="store_mananger_tomap_select">请进入地图选择店铺地址</string>
+	<string name="store_photo_can_add">商户相册（您还可以添加%1$s张照片）</string>
+	<string name="store_photo_delete_sucess">删除成功</string>
+	<string name="store_photo_no_edit_photo">没有可以编辑的图片</string>
+	<string name="store_photo_is_delete">你确定要删除吗？</string>
+	<string name="store_shop_fix_time">输入座机号</string>
+	<string name="store_shop_select_time">请选择时间</string>
+	<string name="store_no_message">暂无店铺信息</string>
+	<string name="store_photo_open_camear">请打开系统相机权限或系统相机异常</string>
+
+	<string name="login_empty_username">用户名不能为空</string>
+	<string name="login_empty_pwd">密码不能为空</string>
+	<string name="login_login_failue">登录失败</string>
+
+	<string name="main_equipment_finish">微POS 设备初始化完成</string>
+	<string name="main_firstpager">首页</string>
+	<string name="main_dynamic">动态</string>
+	<string name="main_person">个人</string>
+	
+	<string name="order_call_headoffice">请联系总店重置密码</string>
+	<string name="qrcode_have">还有</string>
+	<string name="qrcode_refresh_qrcode">秒刷新二维码</string>
+	<string name="locationmap_select_address">请选择一个地址</string>
+	<string name="locationmap_not_result">抱歉，未能找到结果</string>
+	<string name="locationmap_no_info">没有相关地址信息</string>
+
+	<string name="ordermanager_no_order_buy">暂无购卡订单</string>
+	<string name="ordermanager_no_order_finish">暂无完成订单</string>
+	<string name="ordermanager_no_order_ready">暂无待支付订单</string>
+	<string name="ordermanager_no_order_close">暂无已关闭订单</string>
+
+	<string name="search_no_order">未搜索到订单</string>
+	<string name="dynamic_no_message">暂无动态信息</string>
+
+	<string name="commodity_no_sell">暂无上架商品卡</string>
+	<string name="commodity_no_sold_out">暂无下架商品卡</string>
+	<string name="commodity_nominal_value">%1$s面值%2$s元</string>
+	
+	<string name="head_office_operation">该功能只支持总店操作</string>
+</resources>

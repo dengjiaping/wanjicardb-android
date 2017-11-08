@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fresco="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/store_manage_img"
+		android:layout_width="match_parent"
+		android:layout_height="108dp"
+		fresco:actualImageScaleType="focusCrop"
+		fresco:background="@drawable/default_image_bg"
+		fresco:fadeDuration="500"
+		fresco:failureImage="@drawable/default_image_bg"
+		fresco:placeholderImage="@drawable/default_image_bg"/>
+
+	<RelativeLayout
+		android:id="@+id/store_item_shade"
+		android:layout_width="match_parent"
+		android:layout_height="108dp"
+		android:background="@color/translucence_white"
+		android:visibility="gone">
+
+		<ImageButton
+			android:id="@+id/store_item_delete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@null"
+			android:padding="8dp"
+			android:src="@drawable/store_manage_delete"/>
+	</RelativeLayout>
+</FrameLayout>

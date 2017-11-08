@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/base_titlebar"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:background="@color/white"
+              android:gravity="center_vertical">
+
+	<ImageView
+		android:id="@+id/search_left_button"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:paddingLeft="15dp"
+		android:src="@drawable/ic_back_black"/>
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="30dp"
+		android:layout_marginLeft="8dp"
+		android:layout_weight="1"
+		android:background="@drawable/search_bg">
+
+		<ImageView
+			android:layout_width="16dp"
+			android:layout_height="16dp"
+			android:layout_gravity="center"
+			android:layout_marginLeft="5dp"
+			android:src="@drawable/search_hint"/>
+
+		<EditText
+			android:id="@+id/edit_search"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="6dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="6dp"
+			android:layout_weight="1"
+			android:background="@null"
+			android:digits="@string/search_content"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:hint="@string/search_hint"
+			android:maxLength="18"
+			android:textColor="@color/title_text"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/search_rigth_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:text="@string/search"
+		android:textColor="@color/title_text"
+		android:textSize="18sp"/>
+</LinearLayout>

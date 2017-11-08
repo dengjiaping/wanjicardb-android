@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@color/white"
+		android:paddingBottom="17dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="17dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/person_pwd_phone_number"
+			android:textColor="@color/title_text"/>
+
+		<EditText
+			android:id="@+id/person_pwd_phone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="12dp"
+			android:background="@null"
+			android:hint="@string/person_pwd_input_phone_number"
+			android:inputType="number"
+			android:maxLength="11"
+			android:singleLine="true"
+			android:textColorHint="@color/edit_hint"
+			android:textSize="14sp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:paddingBottom="6dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="6dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/person_pwd_code"
+			android:textColor="@color/title_text"/>
+
+		<EditText
+			android:id="@+id/person_pwd_code"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="12dp"
+			android:layout_weight="1"
+			android:background="@null"
+			android:hint="@string/person_pwd_input_code"
+			android:inputType="number"
+			android:maxLength="6"
+			android:textColorHint="@color/edit_hint"
+			android:textSize="14sp"/>
+
+		<TextView
+			android:id="@+id/person_pwd_get_code"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/commodity_manage_sold_out"
+			android:gravity="center"
+			android:paddingBottom="5dp"
+			android:paddingTop="5dp"
+			android:text="@string/person_pwd_get_code"
+			android:textColor="@color/home_title_bg"
+			android:textSize="12sp"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/person_pwd_next"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="75dp"
+		android:background="@drawable/store_manage_conserve"
+		android:gravity="center"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp"
+		android:text="@string/next"
+		android:textColor="@color/white"/>
+</LinearLayout>

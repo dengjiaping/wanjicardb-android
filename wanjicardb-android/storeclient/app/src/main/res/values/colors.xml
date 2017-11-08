@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="home_title_bg">#028be6</color>
+	<color name="title_text">#333</color>
+	<color name="divider_bg">#ccc</color>
+	<color name="app_bg">#e5e5e5</color>
+	<color name="text_hint">#999</color>
+	<color name="edit_hint">#dbdbdb</color>
+	<color name="transparent">#00000000</color>
+	<color name="title_bg">#f8f8f8</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="order_text">#222222</color>
+	<color name="search_bg">#f0f0f0</color>
+	<color name="search_money">#ff4400</color>
+	<color name="translucence_white">#e4f7f8fa</color>
+	<color name="translucence_black">#99000000</color>
+</resources>

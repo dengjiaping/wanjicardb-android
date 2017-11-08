@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="def_padding">15dp</dimen>
+	<dimen name="card_package_height">90dp</dimen>
+</resources>

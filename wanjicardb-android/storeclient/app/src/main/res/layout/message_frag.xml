@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+	<include layout="@layout/base_titlebar"/>
+
+	<RelativeLayout
+		android:id="@+id/message_order"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:paddingBottom="8dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="8dp"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/message_order_pic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/message_order_icon"/>
+
+		<TextView
+			android:id="@+id/message_order_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/message_order_pic"
+			android:text="订单信息"
+			android:textColor="@color/title_text"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/message_order_title"
+			android:layout_below="@id/message_order_title"
+			android:layout_marginTop="5dp"
+			android:text="查看商户的售卡和收款消费的信息"
+			android:textColor="@color/text_hint"
+			android:textSize="12sp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/message_finance"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:paddingBottom="8dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="8dp"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/message_finance_pic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/message_finance_icon"/>
+
+		<TextView
+			android:id="@+id/message_finance_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/message_finance_pic"
+			android:text="财务信息"
+			android:textColor="@color/title_text"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/message_finance_title"
+			android:layout_below="@id/message_finance_title"
+			android:layout_marginTop="5dp"
+			android:text="查看商户账户结算，取现的动态"
+			android:textColor="@color/text_hint"
+			android:textSize="12sp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/message_system"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:paddingBottom="8dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="8dp">
+
+		<ImageView
+			android:id="@+id/message_system_pic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/message_system_icon"/>
+
+		<TextView
+			android:id="@+id/message_system_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/message_system_pic"
+			android:text="@string/dynamic_system_info"
+			android:textColor="@color/title_text"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/message_system_title"
+			android:layout_below="@id/message_system_title"
+			android:layout_marginTop="5dp"
+			android:text="@string/dynamic_system_info_content"
+			android:textColor="@color/text_hint"
+			android:textSize="12sp"/>
+	</RelativeLayout>
+</LinearLayout>

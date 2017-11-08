@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/viewfinder_mask"
+              android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/toolbar_left_title"
+		android:layout_width="wrap_content"
+		android:layout_height="48dp"
+		android:drawableLeft="@drawable/ic_back_white"
+		android:drawablePadding="10dp"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:paddingLeft="15dp"
+		android:singleLine="true"
+		android:text="@string/qrcode"
+		android:textColor="@color/white"
+		android:textSize="18sp"/>
+
+	<FrameLayout
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</LinearLayout>

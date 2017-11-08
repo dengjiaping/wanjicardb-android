@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+	<RadioGroup
+		android:id="@+id/order_manager_radiogroup"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:orientation="horizontal">
+
+		<RadioButton
+			android:id="@+id/order_button_all"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="26dp"
+			android:layout_weight="1"
+			android:background="@drawable/commodity_manage_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:text="@string/all"
+			android:textColor="@color/title_text"
+			android:textSize="14sp"/>
+
+		<RadioButton
+			android:id="@+id/order_button_finish"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:background="@drawable/commodity_manage_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:text="@string/done"
+			android:textColor="@color/title_text"
+			android:textSize="14sp"/>
+
+		<RadioButton
+			android:id="@+id/order_button_readypay"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:background="@drawable/commodity_manage_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:text="@string/ready_pay"
+			android:textColor="@color/title_text"
+			android:textSize="14sp"/>
+
+		<RadioButton
+			android:id="@+id/order_button_close"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginRight="26dp"
+			android:layout_weight="1"
+			android:background="@drawable/commodity_manage_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:text="@string/closed"
+			android:textColor="@color/title_text"
+			android:textSize="14sp"/>
+	</RadioGroup>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/app_bg"/>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/order_manager_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</LinearLayout>

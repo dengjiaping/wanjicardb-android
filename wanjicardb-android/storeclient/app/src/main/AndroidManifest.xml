@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	package="com.wjika.cardstore"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<permission
+		android:name="com.wjika.cardstore.permission.JPUSH_MESSAGE"
+		android:protectionLevel="signature"/>
+	<permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+
+	<!-- internet -->
+	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<!--拨打电话-->
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<!-- Required  一些系统要求的权限，如访问网络等-->
+	<uses-permission android:name="com.wjika.cardstore.permission.JPUSH_MESSAGE"/>
+	<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<!-- internet -->
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<!-- 用于读取手机当前的状态-->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<!-- 1、设置打印机权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_PRINTER" />
+	<!-- 2、访问接触式IC卡读卡设备权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_ICCARD" />
+	<!-- 3、访问非接触IC卡读卡设备权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_RFCARD" />
+	<!-- 4、访问磁条卡读卡器设备权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_MAGCARD" />
+	<!-- 5、获取磁道明文接口权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_MAGCARD_GETTRACKDATA" />
+	<!-- 6、获取磁道密文数据接口权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_MAGCARD_GETENCRYPTTRACKDATA" />
+	<!-- 7、访问PSAM卡设备权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_PSAMCARD" />
+	<!-- 8、访问串口设备权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_SERIALPORT" />
+	<!-- 9、访问系统设备权限 -->
+	<uses-permission android:name="android.permission.CLOUDPOS_MID_SYSTEMDEV" />
+
+	<application
+		android:name="com.wjika.cardstore.StoreApplication"
+		android:allowBackup="false"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		tools:replace="android:icon,android:allowBackup">
+		<!-- 友盟-->
+		<meta-data
+			android:name="UMENG_APPKEY"
+			android:value="55a367c167e58ea01c000688"/>
+		<meta-data
+			android:name="UMENG_CHANNEL"
+			android:value="${CHANNEL_NAME}"/>
+		<meta-data
+			android:name="com.baidu.lbsapi.API_KEY"
+			android:value="0RX7id5iLzjGH4CeFFDETC6F"/>
+		<meta-data
+			android:name="JPUSH_CHANNEL"
+			android:value="developer-default"/>
+		<meta-data
+			android:name="JPUSH_APPKEY"
+			android:value="2b9e503abbf2816486673df4"/>
+
+		<activity
+			android:name=".launcher.ui.LauncherActivity"
+			android:label="@string/app_name"
+			android:noHistory="true"
+			android:screenOrientation="portrait"
+			android:theme="@style/NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".launcher.ui.GuideActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".login.ui.LoginActivity"
+			android:label="登录"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".main.ui.MainActivity"
+		          android:label="首页"
+				  android:launchMode="singleTask"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name="com.zbar.lib.CaptureActivity"
+				  android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".home.ui.CheckstandActivity"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".home.ui.DealActivity"
+				  android:screenOrientation="portrait"/>
+
+		<activity android:name=".consumption.ui.ConsumptionListActivity"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".consumption.ui.DateSelectActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".consumption.ui.ConsumptionSearchActivity"
+		          android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".commoditymanage.ui.CommodityManageActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".financemanage.ui.FinanceManageActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".storemanage.ui.StoreManageActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".storemanage.ui.StoreManageDetailActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".storemanage.ui.StoreManageSetMessageActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.StoreTwoDimensionCode"
+				  android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.StoreManageLocationActivity"
+				  android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.LocationMapActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.StoreManageShopHoursActivity"
+				  android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.StoreManagePhotoActivity"
+				  android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.StoreManageAddPhotoActivity"
+		          android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".storemanage.ui.StoreManageCropActivity"
+		          android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|locale"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name=".message.ui.MessageListActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".message.ui.MessageInfoActivity"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name=".person.ui.PersonPWDActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".person.ui.AlterPWDActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".update.ui.UpdateActivity"
+				  android:screenOrientation="portrait"
+				  android:launchMode="singleTop"
+				  android:theme="@style/UpdateDialog"/>
+		<activity android:name=".person.ui.FeedbackActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".base.ui.WebViewActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".person.ui.AboutUsActivity"
+		          android:screenOrientation="portrait"/>
+		<activity android:name=".special.ui.SpecialActivity"
+				  android:screenOrientation="portrait"/>
+
+		<activity android:name=".ordermanager.ui.OrderManagerActivity"
+				  android:screenOrientation="portrait"/>
+		<activity android:name=".ordermanager.ui.OrderSearchActivity"
+				  android:screenOrientation="portrait"/>
+
+		<service android:name=".update.service.UpdateService" />
+
+		<!-- 百度定位 服务 -->
+		<service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"/>
+		<!--／ 百度定位服务 -->
+
+		<!-- JPush 极光推送-->
+		<!-- Required SDK核心功能-->
+		<activity
+			android:name="cn.jpush.android.ui.PushActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar">
+			<intent-filter>
+				<action android:name="cn.jpush.android.ui.PushActivity"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="com.wjika.cardstore"/>
+			</intent-filter>
+		</activity>
+		<!-- Required  SDK核心功能-->
+		<service
+			android:name="cn.jpush.android.service.DownloadService"
+			android:enabled="true"
+			android:exported="false"/>
+
+		<!-- Required SDK 核心功能-->
+		<service
+			android:name="cn.jpush.android.service.PushService"
+			android:enabled="true"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="cn.jpush.android.intent.REGISTER"/>
+				<action android:name="cn.jpush.android.intent.REPORT"/>
+				<action android:name="cn.jpush.android.intent.PushService"/>
+				<action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+			</intent-filter>
+		</service>
+
+		<!-- Required SDK核心功能-->
+		<receiver
+			android:name="cn.jpush.android.service.PushReceiver"
+			android:enabled="true">
+			<intent-filter android:priority="1000">
+				<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+				<!--Required  显示通知栏 -->
+				<category android:name="com.wjika.cardstore"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.USER_PRESENT"/>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+			<!-- Optional
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED" />
+				<action android:name="android.intent.action.PACKAGE_REMOVED" />
+				<data android:scheme="package" />
+			</intent-filter>-->
+		</receiver>
+
+		<!-- Required SDK核心功能-->
+		<receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
+		<!-- User defined.  For test only  用户自定义的广播接收器-->
+		<!--<receiver
+			android:name="com.wjika.cardstore.receiver.MyReceiver"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="cn.jpush.android.intent.REGISTRATION" />
+				&lt;!&ndash;Required  用户注册SDK的intent&ndash;&gt;
+				<action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+				<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+				&lt;!&ndash;Required  用户接收SDK消息的intent&ndash;&gt;
+				<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+				&lt;!&ndash;Required  用户接收SDK通知栏信息的intent&ndash;&gt;
+				<action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+				&lt;!&ndash;Required  用户打开自定义通知栏的intent&ndash;&gt;
+				<action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+				&lt;!&ndash;Optional 用户接受Rich Push Javascript 回调函数的intent&ndash;&gt;
+				<action android:name="cn.jpush.android.intent.CONNECTION" />
+				&lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt;
+				<category android:name="com.wjika.cardstore" />
+			</intent-filter>
+		</receiver>-->
+	</application>
+</manifest>

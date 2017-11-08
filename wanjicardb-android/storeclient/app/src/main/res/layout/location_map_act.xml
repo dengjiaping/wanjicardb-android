@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<com.baidu.mapapi.map.MapView
+			android:id="@+id/location_map_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+		<ImageView
+			android:id="@+id/location_map_position"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:src="@drawable/location_icon"/>
+
+		<ImageView
+			android:id="@+id/location_map_position_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|end"
+			android:layout_marginBottom="15dp"
+			android:layout_marginRight="15dp"
+			android:src="@drawable/location_position_icon"/>
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/location_map_current"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:hint="@string/location_map_hint_select"
+			android:paddingBottom="22dp"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:paddingTop="22dp"
+			android:singleLine="true"
+			android:textColor="@color/title_text"
+			android:textColorHint="@color/text_hint"
+			android:textSize="16sp"/>
+
+		<ListView
+			android:id="@+id/location_map_listview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1px"
+			android:dividerHeight="1px"
+			android:scrollbars="none"/>
+	</LinearLayout>
+</LinearLayout>

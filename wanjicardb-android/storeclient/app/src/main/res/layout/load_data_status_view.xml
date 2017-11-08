@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/loading_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+	<com.common.widget.ProgressImageView
+		android:id="@+id/loading_img_anim"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/progress_loadanimation"/>
+
+	<ImageView
+		android:id="@+id/loading_img_empty"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/ic_empty"/>
+
+	<TextView
+		android:id="@+id/loading_txt_empty"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="@string/load_data_status_null"/>
+
+	<ImageView
+		android:id="@+id/loading_img_refresh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/ic_refresh"/>
+
+	<TextView
+		android:id="@+id/loading_txt_retry"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="@string/load_data_status_failed"/>
+</LinearLayout>

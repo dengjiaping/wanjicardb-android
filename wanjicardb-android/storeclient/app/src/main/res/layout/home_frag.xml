@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<include layout="@layout/base_titlebar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/home_title_bg"
+				android:orientation="vertical">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="22dp">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:src="@drawable/home_order_sum_pic"/>
+
+					<TextView
+						android:id="@+id/home_order_sum"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:text="@string/home_frag_order_num"
+						android:textColor="@color/white"
+						android:textSize="22sp"/>
+				</RelativeLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="33dp"
+					android:text="@string/home_frag_turnover_today"
+					android:textColor="@color/white"
+					android:textSize="12sp"/>
+
+				<TextView
+					android:id="@+id/home_sell_amount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginBottom="49dp"
+					android:layout_marginTop="17dp"
+					android:text="@string/home_frag_turnover_today_money"
+					android:textColor="@color/white"
+					android:textSize="50sp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="37dp">
+
+				<TextView
+					android:id="@+id/home_scan"
+					style="@style/HomeButton"
+					android:drawableTop="@drawable/home_scan_icon"
+					android:text="@string/home_frag_collection"/>
+
+				<TextView
+					android:id="@+id/home_order_manager"
+					style="@style/HomeButton"
+					android:drawableTop="@drawable/home_order_icon"
+					android:text="@string/home_frag_order_manager"/>
+
+				<TextView
+					android:id="@+id/home_consume_manager"
+					style="@style/HomeButton"
+					android:drawableTop="@drawable/home_consume_icon"
+					android:text="@string/home_frag_consume_manager"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="37dp"
+				android:layout_marginTop="30dp">
+
+				<TextView
+					android:id="@+id/home_product_manager"
+					style="@style/HomeButton"
+					android:drawableTop="@drawable/home_product_icon"
+					android:text="@string/home_frag_commidity_manager"/>
+
+				<TextView
+					android:id="@+id/home_finance_manager"
+					style="@style/HomeButton"
+					android:drawableTop="@drawable/home_finance_icon"
+					android:text="@string/home_frag_finance_manager"/>
+
+				<TextView
+					android:id="@+id/home_store_manager"
+					style="@style/HomeButton"
+					android:drawableTop="@drawable/home_store_icon"
+					android:text="@string/home_frag_store_manager"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

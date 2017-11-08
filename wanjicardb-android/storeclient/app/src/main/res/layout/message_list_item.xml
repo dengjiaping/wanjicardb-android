@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="13dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13dp">
+
+	<TextView
+		android:id="@+id/message_item_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:maxLines="1"
+		android:textColor="@color/title_text"/>
+
+	<ImageView
+		android:id="@+id/message_item_icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/ic_right_arrow"/>
+
+	<TextView
+		android:id="@+id/message_item_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/message_item_icon"
+		android:maxLines="1"
+		android:textColor="@color/text_hint"
+		android:textSize="10sp"/>
+
+	<TextView
+		android:id="@+id/message_item_content"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/message_item_title"
+		android:layout_marginTop="10dp"
+		android:maxLines="1"
+		android:textColor="@color/text_hint"
+		android:textSize="12sp"/>
+</RelativeLayout>

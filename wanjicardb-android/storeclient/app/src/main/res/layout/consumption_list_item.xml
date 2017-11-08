@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/consumption_item_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/text_hint"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/consumption_item_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/text_hint"
+			android:textSize="13sp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:paddingBottom="20dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="20dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/consumption_item_no"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/title_text"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:id="@+id/consumption_item_phone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:layout_marginTop="8dp"
+				android:textColor="@color/title_text"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:id="@+id/consumption_item_amount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/title_text"
+				android:textSize="16sp"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:gravity="right"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/consumption_item_refund"
+				android:layout_width="80dp"
+				android:layout_height="35dp"
+				android:background="@drawable/commodity_manage_sold_out"
+				android:gravity="center"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+				android:text="@string/refund"
+				android:textColor="@color/home_title_bg"/>
+
+			<TextView
+				android:id="@+id/consumption_item_print"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:background="@drawable/commodity_manage_sold_out"
+				android:gravity="center"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+
+				android:text="@string/consumption_print_card"
+				android:textColor="@color/home_title_bg"/>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

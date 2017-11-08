@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/date_select_begin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@color/white"
+		android:paddingBottom="17dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="17dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="@string/more_time_start_time"/>
+
+		<TextView
+			android:id="@+id/date_select_stime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:drawablePadding="12dp"
+			android:drawableRight="@drawable/ic_right_arrow"
+			android:gravity="center_vertical"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/date_select_end"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:background="@color/white"
+		android:paddingBottom="17dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="17dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="@string/more_time_finish_time"/>
+
+		<TextView
+			android:id="@+id/date_select_etime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:drawablePadding="12dp"
+			android:drawableRight="@drawable/ic_right_arrow"
+			android:gravity="center_vertical"/>
+	</RelativeLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:gravity="center"
+		android:text="@string/more_time_time_info"
+		android:textColor="@color/text_hint"
+		android:textSize="12sp"/>
+
+	<TextView
+		android:id="@+id/date_select_show"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="50dp"
+		android:background="@drawable/store_manage_conserve"
+		android:gravity="center"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp"
+		android:text="@string/check"
+		android:textColor="@color/white"/>
+
+	<TextView
+		android:id="@+id/date_select_statistics"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/consumption_print"
+		android:gravity="center"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp"
+		android:text="@string/more_time_print_statistics"
+		android:textColor="@color/home_title_bg"
+		android:visibility="gone"/>
+</LinearLayout>

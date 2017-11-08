@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/guide_viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<RadioGroup
+		android:id="@+id/guide_dots"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal">
+
+		<RadioButton
+			android:id="@+id/guide_dot_first"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:button="@drawable/guide_dot_bg"
+			android:checked="true"
+			android:clickable="false"/>
+
+		<RadioButton
+			android:id="@+id/guide_dot_second"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:button="@drawable/guide_dot_bg"
+			android:clickable="false"/>
+
+		<RadioButton
+			android:id="@+id/guide_dot_third"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:button="@drawable/guide_dot_bg"
+			android:clickable="false"/>
+
+		<RadioButton
+			android:id="@+id/guide_dot_fourth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@drawable/guide_dot_bg"
+			android:clickable="false"/>
+	</RadioGroup>
+</RelativeLayout>

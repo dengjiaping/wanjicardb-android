@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/store_photo_scroll"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/store_photo_home_page"
+			style="@style/StoreMessageItem"
+			android:layout_marginTop="1dp"
+			android:background="@color/title_bg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/store_manager_photo_first_picture"
+				android:textColor="@color/title_text"/>
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout
+				android:id="@+id/store_manage_cover_add"
+				android:layout_width="match_parent"
+				android:layout_height="227dp"
+				android:layout_marginTop="1dp"
+				android:background="@color/white"
+				android:visibility="gone">
+
+				<TextView
+					android:id="@+id/store_manage_add_photo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:background="@drawable/store_manage_add_photo"/>
+			</RelativeLayout>
+
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/store_manage_cover"
+				android:layout_width="match_parent"
+				android:layout_height="227dp"
+				fresco:actualImageScaleType="focusCrop"
+				fresco:background="@drawable/default_image_bg"
+				fresco:fadeDuration="500"
+				fresco:failureImage="@drawable/default_image_bg"
+				fresco:placeholderImage="@drawable/default_image_bg"/>
+
+			<RelativeLayout
+				android:id="@+id/store_manage_shade"
+				android:layout_width="match_parent"
+				android:layout_height="227dp"
+				android:background="@color/translucence_white"
+				android:visibility="gone">
+
+				<ImageButton
+					android:id="@+id/store_manage_delete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:background="@null"
+					android:padding="8dp"
+					android:src="@drawable/store_manage_delete"/>
+			</RelativeLayout>
+		</FrameLayout>
+
+		<LinearLayout
+			style="@style/StoreMessageItem"
+			android:layout_marginTop="12dp"
+			android:background="@color/title_bg">
+
+			<TextView
+				android:id="@+id/store_manage_add_num"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/store_manager_photo_commercial"
+				android:textColor="@color/title_text"/>
+		</LinearLayout>
+
+		<com.common.view.GridViewForInner
+			android:id="@+id/store_manage_photo_album"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/app_bg"
+			android:horizontalSpacing="5dp"
+			android:numColumns="2"
+			android:padding="5dp"
+			android:verticalSpacing="5dp"/>
+
+		<!--<LinearLayout
+			android:layout_marginTop="12dp"
+			style="@style/StoreMessageItem"
+			android:background="@color/title_bg">
+			<TextView
+				android:id="@+id/store_manage_product_num"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="产品相册"
+				android:textColor="@color/title_text"/>
+		</LinearLayout>
+
+		<com.common.view.GridViewForInner
+			android:id="@+id/store_manage_photo_product"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:numColumns="2"
+			android:verticalSpacing="5dp"
+			android:horizontalSpacing="5dp"
+			android:background="@color/app_bg"/>-->
+	</LinearLayout>
+</ScrollView>

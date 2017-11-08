@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<include layout="@layout/base_titlebar"/>
+
+			<TextView
+				android:id="@+id/person_alter_pwd"
+				style="@style/PersonItem"
+				android:layout_marginTop="12dp"
+				android:text="@string/person_fix_find_password"/>
+
+			<TextView
+				android:id="@+id/person_update"
+				style="@style/PersonItem"
+				android:layout_marginTop="12dp"
+				android:text="@string/person_version_upgrade"/>
+
+			<TextView
+				android:id="@+id/person_contact_service"
+				style="@style/PersonItem"
+				android:layout_marginTop="1px"
+				android:text="@string/person_call_service"/>
+
+			<TextView
+				android:id="@+id/person_feedback"
+				style="@style/PersonItem"
+				android:layout_marginTop="1px"
+				android:text="@string/person_feedback"/>
+
+			<TextView
+				android:id="@+id/person_version_desc"
+				style="@style/PersonItem"
+				android:layout_marginTop="1px"
+				android:text="@string/person_user_help"/>
+
+			<TextView
+				android:id="@+id/person_about_us"
+				style="@style/PersonItem"
+				android:layout_marginTop="1px"
+				android:text="@string/person_about_us"/>
+
+			<TextView
+				android:id="@+id/person_logout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="20dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="75dp"
+				android:background="@drawable/store_manage_conserve"
+				android:gravity="center"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+				android:text="@string/person_quit_current_account"
+				android:textColor="@color/white"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

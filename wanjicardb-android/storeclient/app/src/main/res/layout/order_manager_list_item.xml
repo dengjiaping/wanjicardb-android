@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp">
+
+		<TextView
+			android:id="@+id/order_type_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:textColor="@color/text_hint"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/order_orderno_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/text_hint"
+			android:textSize="13sp"/>
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/app_bg"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="15dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/order_name_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/title_text"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:id="@+id/order_num_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:textColor="@color/title_text"
+			android:textSize="16sp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/order_money"
+				android:textColor="@color/title_text"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:id="@+id/order_money_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/search_money"
+				android:textSize="16sp"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/app_bg"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp">
+
+		<TextView
+			android:id="@+id/order_phone_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:textColor="@color/text_hint"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/order_time_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+			android:textColor="@color/text_hint"
+			android:textSize="12sp"/>
+	</RelativeLayout>
+</LinearLayout>
